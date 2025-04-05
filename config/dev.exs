@@ -4,7 +4,7 @@ import Config
 config :hello_phx_1_8, HelloPhx18.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
+  hostname: "0.0.0.0",
   database: "hello_phx_1_8_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
