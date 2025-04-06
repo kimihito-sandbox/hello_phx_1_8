@@ -20,7 +20,10 @@ defmodule HelloPhx18Web.Router do
 
     get "/", PageController, :home
     get "/hello", HelloController, :index
+    get "/hello/partial", HelloController, :partial
     get "/hello/:messenger", HelloController, :show
+
+    live "/thermostat", ThermostatLive
   end
 
   # Other scopes may use custom stacks.

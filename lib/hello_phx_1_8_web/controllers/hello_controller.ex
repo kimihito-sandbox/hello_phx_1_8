@@ -8,4 +8,10 @@ defmodule HelloPhx18Web.HelloController do
   def show(conn, %{"messenger" => messenger} = params) do
     render(conn, :show, messenger: messenger)
   end
+
+  def partial(conn, _params) do
+    conn
+    |> put_root_layout(false)
+    |> render(:partial)
+  end
 end

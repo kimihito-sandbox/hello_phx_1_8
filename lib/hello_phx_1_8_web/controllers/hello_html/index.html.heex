@@ -1,3 +1,12 @@
 <section>
 <h2>Hello World, from Phoenix!</h2>
 </section>
+
+<div id="hello">
+hello
+</div>
+
+
+<a hx-get="/hello/partial" hx-target="#hello" hx-swap="innerHTML">
+  Load Partial
+</a>
